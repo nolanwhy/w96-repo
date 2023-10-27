@@ -1,0 +1,18 @@
+{
+    "/": {
+        "length":0,
+        "type":1
+    },
+    "/Packages.json": {
+        "length":1931,
+        "type":0
+    },
+    "/Release.json": {
+        "length":123,
+        "type":0
+    },
+    "/dist": {
+        "length":0,
+        "type":1
+    }
+}
