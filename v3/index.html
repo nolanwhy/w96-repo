@@ -31,9 +31,7 @@
         pkg.className = "card mb-3";
 
         const rightButtons = document.createElement("div");
-        rightButtons.style.position = "fixed";
-        rightButtons.style.right = "0";
-        rightButtons.style.margin = "5px";
+        rightButtons.classList = "text-end";
         pkg.appendChild(rightButtons);
 
         const testPako96 = document.createElement("button");
@@ -47,6 +45,7 @@
 
         const info = document.createElement("div");
         info.className = "d-flex";
+        info.style.marginTop = "-50px";
         pkg.appendChild(info);
 
         const icon = document.createElement("img");
@@ -73,6 +72,7 @@
 
         const infoText = document.createElement("div");
         infoText.className = "ms-2";
+        infoText.marginTop = "15px";
         info.appendChild(infoText);
 
         const title = document.createElement("h2");
