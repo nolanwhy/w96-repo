@@ -17,10 +17,16 @@
     </style>
 </head>
 <body>
-    <h1>Windows 96 v3</h1>
-    <p>Add <strong>https://nolanwhy.github.io/w96-repo/v3</strong> as a source on the Package Manager.</p>
-    <h4>Included Packages:</h4>
-    <div class="pkglist"></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Windows 96 v3</h1>
+                <p>Add <strong>https://nolanwhy.github.io/w96-repo/v3</strong> as a source on the Package Manager.</p>
+                <h4>Included Packages:</h4>
+                <div class="pkglist"></div>
+            </div>
+        </div>
+    </div>
     <script type="module">
     const pkglist = document.querySelector(".pkglist");
     const request = await fetch("./Packages.json", {
