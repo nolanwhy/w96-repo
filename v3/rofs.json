@@ -1,18 +1,34 @@
 {
     "/": {
-        "length":0,
-        "type":1
+        "length": 0,
+        "type": 1
     },
     "/Packages.json": {
-        "length":1931,
-        "type":0
+        "length": 556,
+        "type": 0
     },
     "/Release.json": {
-        "length":123,
-        "type":0
+        "length": 97,
+        "type": 0
     },
     "/dist": {
-        "length":0,
-        "type":1
+        "length": 0,
+        "type": 1
+    },
+    "/dist/obs96": {
+        "length": 0,
+        "type": 1
+    },
+    "/dist/obs96/16x16.png": {
+        "length": 652,
+        "type": 1
+    },
+    "/dist/obs96/32x32.png": {
+        "length": 2211,
+        "type": 1
+    },
+    "/dist/obs96/content@2.zip": {
+        "length": 45934,
+        "type": 1
     }
 }
