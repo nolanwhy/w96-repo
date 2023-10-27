@@ -12,7 +12,7 @@
         height: 100px;
     }
     .pkglist .card .h2{
-        /* margin: 0; */
+        margin: 0;
     }
     </style>
 </head>
@@ -39,8 +39,9 @@
 
         const testPako96 = document.createElement("button");
         testPako96.classList = "btn btn-primary";
+        testPako96.pkg = response[i]["name"];
         testPako96.addEventListener("click", () => {
-            window.location = "https://onofficiel.codeberg.page/pako96/pkg/?r=https://nolanwhy.github.io/w96-repo/v3&pkg=" + response[i]["name"];
+            window.location = "https://onofficiel.codeberg.page/pako96/pkg/?r=https://nolanwhy.github.io/w96-repo/v3&pkg=" + testPako96.pkg;
         });
         testPako96.innerText = "Test with Pako96";
         rightButtons.appendChild(testPako96);
