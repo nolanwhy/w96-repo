@@ -3,12 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nolanwhy's Repo</title>
     <link href="https://untitlednetwork.xyz/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://untitlednetwork.xyz/css/bootstrap-icons.css" rel="stylesheet">
+    <title>nolanwhy's Repo</title>
+    <style>
+    .pkglist .card .img{
+        width: 100px;
+        height: 100px;
+    }
+    .pkglist .card .h2{
+        /* margin: 0; */
+    }
+    </style>
 </head>
 <body>
     <h1>Windows 96 v3</h1>
-    <p>Add this as a source on the Package Manager.</p>
+    <p>Add <strong>https://nolanwhy.github.io/w96-repo/v3</strong> as a source on the Package Manager.</p>
+    <h4>Included Packages:</h4>
+    <div class="pkglist"></div>
+    <script type="module">
+    const pkglist = document.querySelector("pkglist");
+    const request = await fetch("./Packages.json", {
+        method: "GET"
+    });
+    const response = await request.json();
+    for(var i = 0; i < response.length; i++) {
+        const pkg = document.createElement("div");
+        pkg.className = "card mb-3";
+
+        const rightButtons = document.createElement("div");
+        rightButtons.style.position = "fixed";
+        rightButtons.style.right = "0";
+        rightButtons.style.margin = "5px";
+        pkg.appendChild(rightButtons);
+
+        const testPako96 = document.createElement("button");
+        testPako96.classList = "btn btn-primary";
+        testPako96.addEventListener("click", () => {
+            window.location = "https://onofficiel.codeberg.page/pako96/pkg/?r=https://nolanwhy.github.io/w96-repo/v3&pkg=" + response[i]["name"];
+        });
+        testPako96.innerText = "Test with Pako96";
+        rightButtons.appendChild(testPako96);
+
+        const info = document.createElement("div");
+        info.className = "d-flex";
+        pkg.appendChild(info);
+
+        const icon = document.createElement("img");
+        let iconFile;
+        if(response[i]["iconFiles"]["128x128"]) {
+            iconFile = response[i]["iconFiles"]["128x128"];
+        } else {
+            if(response[i]["iconFiles"]["64x64"]) {
+                iconFile = response[i]["iconFiles"]["64x64"];
+            } else {
+                if(response[i]["iconFiles"]["32x32"]) {
+                    iconFile = response[i]["iconFiles"]["32x32"];
+                } else {
+                    if(response[i]["iconFiles"]["16x16"]) {
+                        iconFile = response[i]["iconFiles"]["16x16"]
+                    }
+                }
+            }
+        }
+        iconFile = iconFile.split('/');
+        iconFile = iconFile[iconFile.length - 1];
+        icon.src = "./dist/" + response[i]["name"] + "/" + iconFile;
+        info.appendChild(icon);
+
+        const infoText = document.createElement("div");
+        infoText.className = "ms-2";
+        info.appendChild(infoText);
+
+        const title = document.createElement("h2");
+        title.innerText = response[i]["friendlyName"];
+        infoText.appendChild(title);
+
+        const description = document.createElement("h5");
+        description.innerText = response[i]["description"];
+        infoText.appendChild(description);
+
+        pkglist.appendChild(pkg);
+    }
+    </script>
 </body>
 </html>
