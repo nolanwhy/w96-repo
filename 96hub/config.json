@@ -5,6 +5,10 @@
             "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/welcome.html"
         },
         {
+            "id": "v2repos",
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/v2repos.html"
+        },
+        {
             "id": "v3repos",
             "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/v3repos.html"
         }
@@ -25,6 +29,13 @@
         {
             "name": "Package Manager",
             "items": [
+                {
+                    "name": "v2 Repos",
+                    "target": {
+                        "type": "page",
+                        "location": "v2repos"
+                    }
+                },
                 {
                     "name": "v3 Repos",
                     "target": {
