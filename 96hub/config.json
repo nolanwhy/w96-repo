@@ -1,23 +1,39 @@
 {
     "pages": [
         {
-            "id": "default",
-            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/default.html"
+            "id": "welcome",
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/welcome.html"
+        },
+        {
+            "id": "v3repos",
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/v3repos.html"
         }
     ],
     "sidebar": [
         {
-            "name": "WELCOME",
+            "name": "GETTING STARTED",
             "items": [
                 {
-                    "name": "Starting page",
+                    "name": "Welcome",
                     "target": {
                         "type": "page",
-                        "location": "default"
+                        "location": "welcome"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Package Manager",
+            "items": [
+                {
+                    "name": "v3 Repos",
+                    "target": {
+                        "type": "page",
+                        "location": "v3repos"
                     }
                 }
             ]
         }
     ],
-    "startPage": "default"
+    "startPage": "welcome"
 }
