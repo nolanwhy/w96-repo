@@ -1,0 +1,23 @@
+{
+    "pages": [
+        {
+            "id": "default",
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/default.html"
+        }
+    ],
+    "sidebar": [
+        {
+            "name": "WELCOME",
+            "items": [
+                {
+                    "name": "Starting page",
+                    "target": {
+                        "type": "page",
+                        "location": "default"
+                    }
+                }
+            ]
+        }
+    ],
+    "startPage": "default"
+}
