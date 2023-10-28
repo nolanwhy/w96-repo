@@ -32,6 +32,8 @@
 
         const rightButtons = document.createElement("div");
         rightButtons.classList = "text-end";
+        rightButtons.style.right = "0px";
+        rightButtons.style.margin = "5px";
         pkg.appendChild(rightButtons);
 
         const testPako96 = document.createElement("button");
@@ -72,7 +74,7 @@
 
         const infoText = document.createElement("div");
         infoText.className = "ms-2";
-        infoText.marginTop = "15px";
+        infoText.style.marginTop = "15px";
         info.appendChild(infoText);
 
         const title = document.createElement("h2");
