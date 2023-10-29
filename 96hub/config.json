@@ -5,6 +5,10 @@
             "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/welcome.html"
         },
         {
+            "id": "testing",
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/testing656515641.html"
+        },
+        {
             "id": "v2repos",
             "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/v2repos.html"
         },
@@ -22,6 +26,13 @@
                     "target": {
                         "type": "page",
                         "location": "welcome"
+                    }
+                },
+                {
+                    "name": "Testing some things",
+                    "target": {
+                        "type": "page",
+                        "location": "testing"
                     }
                 }
             ]
