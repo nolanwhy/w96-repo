@@ -6,7 +6,7 @@
         },
         {
             "id": "testing",
-            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/testing656515641.html"
+            "location": "https://nolanwhy.github.io/w96-repo/96hub/pages/testing6565156412.html"
         },
         {
             "id": "v2repos",
@@ -32,7 +32,7 @@
                     "name": "Testing some things",
                     "target": {
                         "type": "page",
-                        "location": "testing"
+                        "location": "testing2"
                     }
                 }
             ]
