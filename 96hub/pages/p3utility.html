@@ -1,0 +1,45 @@
+<div class="title">P3 Utility</div>
+
+<strong>
+    <p>
+        In here you can easily get P3 utilities and do things with P3 without launching apps.
+    </p>
+</strong>
+
+
+<button onclick='w96.sys.execCmd("p3");'>Launch P3 (The connection lolol)</button>
+<br>
+<button onclick='w96.sys.execCmd("p3fs");'>Launch P3FS (Make people able to mount your drive)</button>
+
+<br>
+
+<strong>
+    <p>
+        Information about P3
+    </p>
+</strong>
+
+<p id="p3info">
+    Please wait...
+</p>
+
+<strong>
+    <p>
+        P3 Panel
+    </p>
+</strong>
+
+<p id="p3info">
+    <button onclick='w96.net.p3.connect();'>Connect to P3</button>
+    <br>
+    <button onclick='w96.net.p3.disconnect();'>Disconnect from P3</button>
+</p>
+
+<!-- LOL I AM LAUNCHING JAVASCRIPT WITH THIS -->
+<img onerror='
+const p3info = document.getElementById("p3info");
+setInterval(async () => {
+    p3info.innerHTML = "Connected: <strong>" + await w96.net.p3.connected.toString() + "</strong>";
+    p3info.innerHTML += "<br>Address: <strong>" + await w96.net.p3.address + "</strong>";
+}, 5000);
+' src=x style="visibility: none;">
