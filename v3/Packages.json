@@ -5,7 +5,7 @@
         "description": "OBS Studio ported to Windows 96.",
         "author": "nolanwhy",
         "category": "utility",
-        "version": 3,
+        "version": 4,
         "feature_requirements": [],
         "min_os_version": 300000,
         "max_os_version": 400000,
@@ -17,5 +17,24 @@
             "16x16": "$REPO_PATH$/dist/obs96/16x16.png"
         },
         "packageRoot": "$REPO_PATH$/dist/obs96"
+    },
+    {
+        "name": "tasktop96",
+        "friendlyName": "tasktop96",
+        "description": "Put your Windows 96 taskbar at the top of your screen.",
+        "author": "nolanwhy",
+        "category": "utility",
+        "version": 1,
+        "feature_requirements": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "depends": [],
+        "iconFiles": {
+            "128x128": "$REPO_PATH$/dist/tasktop96/128x128.png",
+            "64x64": "$REPO_PATH$/dist/tasktop96/64x64.png",
+            "32x32": "$REPO_PATH$/dist/tasktop96/32x32.png",
+            "16x16": "$REPO_PATH$/dist/tasktop96/16x16.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/tasktop96"
     }
 ]
