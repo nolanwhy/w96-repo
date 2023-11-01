@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>nolanwhy's Repo</title>
     <style>
+    body {
+        font-family: sans-serif;
+    }
     .pkglist .card img{
         width: 100px;
         height: 100px;
@@ -13,41 +15,33 @@
     .pkglist .card .h2{
         margin: 0;
     }
+    .d-flex{
+        display: flex;
+    }
     </style>
 </head>
-<body>
-    <h1>Windows 96 v3</h1>
+<body style="margin: 0;">
+    <h1 style="margin: 0;">Windows 96 v3</h1>
     <p>Add <strong>https://nolanwhy.github.io/w96-repo/v3</strong> as a source on the Package Manager.</p>
     <h4>Included Packages:</h4>
-    <div class="pkglist"></div>
+    <div class="pkglist">Please wait...</div>
     <script type="module">
     const pkglist = document.querySelector(".pkglist");
     const request = await fetch("./Packages.json", {
-        method: "GET"
+        method: "GET",
+        headers: {
+            "Accept": "application/json"
+        }
     });
     const response = await request.json();
+    pkglist.innerHTML = "";
     for(var i = 0; i < response.length; i++) {
         const pkg = document.createElement("div");
-        pkg.className = "card mb-3";
-
-        const rightButtons = document.createElement("div");
-        rightButtons.classList = "text-end";
-        rightButtons.style.right = "0px";
-        rightButtons.style.margin = "5px";
-        pkg.appendChild(rightButtons);
-
-        const testPako96 = document.createElement("button");
-        testPako96.classList = "btn btn-primary";
-        testPako96.pkg = response[i]["name"];
-        testPako96.addEventListener("click", () => {
-            window.location = "https://onofficiel.codeberg.page/pako96/pkg/?r=https://nolanwhy.github.io/w96-repo/v3&pkg=" + testPako96.pkg;
-        });
-        testPako96.innerText = "Test with Pako96";
-        rightButtons.appendChild(testPako96);
+        pkg.className = "card";
+        pkg.style.marginBottom = "15px";
 
         const info = document.createElement("div");
         info.className = "d-flex";
-        info.style.marginTop = "-60px";
         pkg.appendChild(info);
 
         const icon = document.createElement("img");
@@ -73,17 +67,26 @@
         info.appendChild(icon);
 
         const infoText = document.createElement("div");
-        infoText.className = "ms-2";
-        infoText.style.marginTop = "15px";
+        infoText.style.marginLeft = "10px";
         info.appendChild(infoText);
 
         const title = document.createElement("h2");
         title.innerText = response[i]["friendlyName"];
+        title.style.margin = "0";
         infoText.appendChild(title);
 
         const description = document.createElement("h5");
         description.innerText = response[i]["description"];
+        description.style.margin = "0";
         infoText.appendChild(description);
+
+        const testPako96 = document.createElement("button");
+        testPako96.pkg = response[i]["name"];
+        testPako96.addEventListener("click", () => {
+            window.location = "https://onofficiel.codeberg.page/pako96/pkg/?r=https://nolanwhy.github.io/w96-repo/v3&pkg=" + testPako96.pkg;
+        });
+        testPako96.innerText = "Test with Pako96";
+        infoText.appendChild(testPako96);
 
         pkglist.appendChild(pkg);
     }
