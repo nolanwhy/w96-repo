@@ -11,12 +11,12 @@
         "max_os_version": 400000,
         "depends": [],
         "iconFiles": {
-            "128x128": "$REPO_PATH$/dist/obs96/128x128.png",
-            "64x64": "$REPO_PATH$/dist/obs96/64x64.png",
-            "32x32": "$REPO_PATH$/dist/obs96/32x32.png",
-            "16x16": "$REPO_PATH$/dist/obs96/16x16.png"
+            "128x128": "$REPO_PATH$/dist/o/obs96/128x128.png",
+            "64x64": "$REPO_PATH$/dist/o/obs96/64x64.png",
+            "32x32": "$REPO_PATH$/dist/o/obs96/32x32.png",
+            "16x16": "$REPO_PATH$/dist/o/obs96/16x16.png"
         },
-        "packageRoot": "$REPO_PATH$/dist/obs96"
+        "packageRoot": "$REPO_PATH$/dist/o/obs96"
     },
     {
         "name": "tasktop96",
@@ -30,11 +30,11 @@
         "max_os_version": 400000,
         "depends": [],
         "iconFiles": {
-            "128x128": "$REPO_PATH$/dist/tasktop96/128x128.png",
-            "64x64": "$REPO_PATH$/dist/tasktop96/64x64.png",
-            "32x32": "$REPO_PATH$/dist/tasktop96/32x32.png",
-            "16x16": "$REPO_PATH$/dist/tasktop96/16x16.png"
+            "128x128": "$REPO_PATH$/dist/t/tasktop96/128x128.png",
+            "64x64": "$REPO_PATH$/dist/t/tasktop96/64x64.png",
+            "32x32": "$REPO_PATH$/dist/t/tasktop96/32x32.png",
+            "16x16": "$REPO_PATH$/dist/t/tasktop96/16x16.png"
         },
-        "packageRoot": "$REPO_PATH$/dist/tasktop96"
+        "packageRoot": "$REPO_PATH$/dist/t/tasktop96"
     }
 ]
