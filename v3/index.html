@@ -63,7 +63,7 @@
         }
         iconFile = iconFile.split('/');
         iconFile = iconFile[iconFile.length - 1];
-        icon.src = "./dist/" + response[i]["name"] + "/" + iconFile;
+        icon.src = "./dist/" + response[i]["name"].slice(0,1) + "/" + response[i]["name"] + "/" + iconFile;
         info.appendChild(icon);
 
         const infoText = document.createElement("div");
