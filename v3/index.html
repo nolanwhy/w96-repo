@@ -80,6 +80,11 @@
         description.style.margin = "0";
         infoText.appendChild(description);
 
+        const version = document.createElement("h5");
+        version.innerText = "Version " + response[i]["version"];
+        version.style.margin = "0";
+        infoText.appendChild(version);
+
         const testPako96 = document.createElement("button");
         testPako96.pkg = response[i]["name"];
         testPako96.addEventListener("click", () => {
