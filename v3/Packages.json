@@ -24,7 +24,7 @@
         "description": "Put your Windows 96 taskbar at the top of your screen.",
         "author": "nolanwhy",
         "category": "utilities",
-        "version": 3,
+        "version": 4,
         "feature_requirements": [],
         "min_os_version": 300000,
         "max_os_version": 400000,
