@@ -1,5 +1,24 @@
 [
     {
+        "name": "mP3",
+        "friendlyName": "mP3",
+        "description": "mP3 is a music app for Windows 96, using P3.",
+        "author": "nolanwhy",
+        "category": "entertainment",
+        "version": 1,
+        "feature_requirements": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "depends": [],
+        "iconFiles": {
+            "128x128": "$REPO_PATH$/dist/m/mP3/128x128.png",
+            "64x64": "$REPO_PATH$/dist/m/mP3/64x64.png",
+            "32x32": "$REPO_PATH$/dist/m/mP3/32x32.png",
+            "16x16": "$REPO_PATH$/dist/m/mP3/16x16.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/m/mP3"
+    },
+    {
         "name": "obs96",
         "friendlyName": "OBS96",
         "description": "OBS Studio ported to Windows 96.",
