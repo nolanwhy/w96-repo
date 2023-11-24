@@ -5,7 +5,7 @@
         "description": "Synchronize your Windows 96 data between other computers.",
         "author": "nolanwhy",
         "category": "utilities",
-        "version": 1,
+        "version": 2,
         "feature_requirements": [],
         "min_os_version": 300000,
         "max_os_version": 400000,
