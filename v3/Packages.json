@@ -42,6 +42,27 @@
         "packageRoot": "$REPO_PATH$/dist/m/mP3"
     },
     {
+        "name": "mrcs",
+        "friendlyName": "MsgRoom Custom Server",
+        "description": "Custom servers for MsgRoom",
+        "author": "nolanwhy",
+        "category": "social",
+        "version": 1,
+        "feature_requirements": [],
+        "installedSize": 5546,
+		"downloadSize": 5546,
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "depends": [],
+        "iconFiles": {
+            "128x128": "$REPO_PATH$/dist/m/mrcs/128x128.png",
+            "64x64": "$REPO_PATH$/dist/m/mrcs/64x64.png",
+            "32x32": "$REPO_PATH$/dist/m/mrcs/32x32.png",
+            "16x16": "$REPO_PATH$/dist/m/mrcs/16x16.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/m/mrcs"
+    },
+    {
         "name": "obs96",
         "friendlyName": "OBS96",
         "description": "OBS Studio ported to Windows 96.",
