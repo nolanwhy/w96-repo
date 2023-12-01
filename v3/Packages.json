@@ -103,5 +103,26 @@
             "16x16": "$REPO_PATH$/dist/t/tasktop96/16x16.png"
         },
         "packageRoot": "$REPO_PATH$/dist/t/tasktop96"
+    },
+    {
+        "name": "warning",
+        "friendlyName": "INSTALL THIS -- REPO CHANGED",
+        "description": "Install nolanwhy's new repo and remove the old one",
+        "author": "nolanwhy",
+        "category": "utilities",
+        "version": 1,
+        "feature_requirements": [],
+        "installedSize": 0,
+		"downloadSize": 0,
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "depends": [],
+        "iconFiles": {
+            "128x128": "$REPO_PATH$/dist/w/warning/128x128.png",
+            "64x64": "$REPO_PATH$/dist/w/warning/64x64.png",
+            "32x32": "$REPO_PATH$/dist/w/warning/32x32.png",
+            "16x16": "$REPO_PATH$/dist/w/warning/16x16.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/w/warning"
     }
 ]
